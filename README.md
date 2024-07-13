@@ -1,19 +1,5 @@
 # terraform-aws-sagemaker
 
-[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-sagemaker/workflows/Verify/badge.svg?branch=main)](https://github.com/JamesWoolfenden/terraform-aws-sagemaker)
-[![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-sagemaker.svg)](https://github.com/JamesWoolfenden/terraform-aws-sagemaker/releases/latest)
-[![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/JamesWoolfenden/terraform-aws-sagemaker.svg?label=latest)](https://github.com/JamesWoolfenden/terraform-aws-sagemaker/releases/latest)
-![Terraform Version](https://img.shields.io/badge/tf-%3E%3D0.14.0-blue.svg)
-[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/JamesWoolfenden/terraform-aws-sagemaker/cis_aws)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=JamesWoolfenden%2Fterraform-aws-sagemaker&benchmark=CIS+AWS+V1.2)
-[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
-[![checkov](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
-[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/jameswoolfenden/terraform-aws-sagemaker/general)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=JamesWoolfenden%2Fterraform-aws-sagemaker&benchmark=INFRASTRUCTURE+SECURITY)
-
-Terraform module -
-
----
-
-It's 100% Open Source and licensed under the [APACHE2](LICENSE).
 
 ## Usage
 
@@ -29,7 +15,7 @@ Include **module.sagemaker.tf** this repository as a module in your existing ter
 
 ```terraform
 module "sagemaker" {
-  source        = "JamesWoolfenden/sagemaker/aws"
+  source        = "havinash/sagemaker/aws"
   version       = "0.0.2"
   policy        = jsonencode(var.policy)
 }
@@ -163,27 +149,6 @@ resource "aws_iam_policy" "terraform_pike" {
 ```
 <!-- END OF PRE-COMMIT-PIKE DOCS HOOK -->
 
-## Related Projects
-
-Check out these related projects.
-
-- [terraform-aws-s3](https://github.com/jameswoolfenden/terraform-aws-s3) - S3 buckets
-
-## Help
-
-**Got a question?**
-
-File a GitHub [issue](https://github.com/JamesWoolfenden/terraform-aws-sagemaker/issues).
-
-## Contributing
-
-### Bug Reports & Feature Requests
-
-Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-aws-sagemaker/issues) to report any bugs or file feature requests.
-
-## Copyrights
-
-Copyright © 2022-23 James Woolfenden
 
 ## License
 
